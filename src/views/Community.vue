@@ -1,5 +1,5 @@
 <template>
   <div>
-    我是首页
+    我是社区页面
   </div>
 </template>

@@ -1,0 +1,112 @@
+@base: #ffdd00;
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+.mint-header {
+  background-color: @base;
+ }
+ .mint-button:not(.is-disabled):active::after {
+    opacity: .2 /* .6 */
+ }
+ .mint-button--primary {
+    background-color: @base;
+ }
+ .mint-button--primary.is-plain {
+    border: 1px solid @base;
+    color: @base
+ }
+ .mint-badge.is-primary {
+  background-color: @base
+ }
+ .mint-switch-input:checked + .mint-switch-core {
+  border-color: @base;
+  background-color: @base;
+ }
+ .mint-navbar .mint-tab-item.is-selected {
+  border-bottom: 3px solid @base;
+  color: @base;
+ }
+ .mint-tabbar > .mint-tab-item.is-selected {
+  color: @base;
+ }
+ .mint-searchbar-cancel {
+  color: @base;
+ }
+ .mint-checkbox-input:checked + .mint-checkbox-core {
+  background-color: #fff;
+  border-color: @base;
+ }
+ .mint-radio-input:checked + .mint-radio-core {
+  background-color: @base;
+  border-color: @base;
+ }
+ .mt-range-progress {
+  background-color: @base;
+ }
+ .mt-progress-progress {
+  background-color: @base;
+ }
+ .mint-msgbox-confirm {
+  color: @base;
+ }
+ .mint-msgbox-confirm:active {
+  color: @base;
+ }
+ .mint-datetime-action {
+  color: @base;
+ }
+.mint-cell-wrapper {
+   background-image: none;
+}
+.mint-tabbar {
+   background: #fff;
+   .mint-tab-item.is-selected {
+      color: @base;
+   }
+}
+input:-internal-autofill-selected  {
+   background-color: #ffffff!important;
+}
