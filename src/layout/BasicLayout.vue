@@ -39,8 +39,8 @@ export default {
   },
   mounted() {
     const { pathname } = location;
-    const matchArr = [{ path: "/home", id: "1" }, { path: "/market", id: "2" }];
-    const { id } = matchArr.find(_ => _.path === pathname);
+    const matchArr = [{ path: "/home", id: "1" }, { path: "/market", id: "2" }, { path: "/community", id: "3" }, { path: "/self", id: "4" } ];
+    const { id } = matchArr.find(_ => _.path === pathname) || '1';
     this.selected = id;
   }
 };
